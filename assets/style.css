@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-  width: 400px;
+  width: 800px;
   margin: auto;
   text-align: center;
 }
@@ -27,6 +27,11 @@ h1, #searchForm {
   padding: 24px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+img { 
+  width: 300px;
 }
 
 input {

@@ -5,7 +5,6 @@ class LocationFinder {
     this._location = null;
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
-        document.getElementById("getNearestToilet").className="active"; 
         this._location = {
           lat: position.coords.latitude,
           lon: position.coords.longitude
@@ -19,7 +18,7 @@ class LocationFinder {
   get location() {
       return this._location
   }
-  
+
   getDistance(latitude, longitude) {
     if ((latitude ==this._location.lat) && (longitude ==this._location.lon)) {
       return 0;
